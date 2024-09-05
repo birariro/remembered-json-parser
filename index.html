@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Json parser</title>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <link rel="icon" href="favicon/valid.png" id="favicon">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body class="beautify show-indexes">
+    <div class="ui-editor"><textarea class="ui-field json" id="editor" spellcheck="false" contenteditable="true" placeholder="Input json"></textarea>
+      <div class="ui-resizer"></div>
+    </div>
+    <div class="ui-aside">
+      <div class="ui-notification" id="status"></div>
+      <div class="ui-menu">
+        <div class="ui-menu-dropdown">
+          <div class="ui-menu-panel">
+            <div class="ui-menu-item ui-option" id="show-types">Show Types</div>
+            <div class="ui-menu-item ui-option" id="show-indexes">Show Indexes</div>
+          </div>
+        </div>
+      </div>
+      <div class="ui-treeview json" id="result"></div>
+      <div class="ui-searchbar">
+        <div style="position: absolute"></div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
